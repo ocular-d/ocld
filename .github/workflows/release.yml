@@ -8,11 +8,11 @@ on:
 
 jobs:
   release:
-    runs-on: ubuntu-latest
+    # runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v1
-    - name: Create Zip Folder
-      run: zip -r ocular-d.zip ocular-d
+    # - uses: actions/checkout@v1
+    # - name: Create Zip Folder
+    #   run: zip -r ocular-d.zip ocular-d
 
     - name: Release
     - uses: docker://antonyurchenko/git-release:latest
