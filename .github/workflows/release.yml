@@ -1,6 +1,5 @@
 name: GitHubRelease
 on: push
-name: Build and release on push
 jobs:
   release:
     name: Release
