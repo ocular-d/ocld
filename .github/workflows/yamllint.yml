@@ -1,0 +1,12 @@
+name: Yaml Lint
+on: [push]
+jobs:
+  lint-yaml:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: yaml-lint
+      uses: ibiqlik/action-yamllint@master
+      with:
+        file_or_dir: ocular-d/.
+        config_file: .yamllint.yml
