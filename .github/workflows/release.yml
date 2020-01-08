@@ -1,14 +1,19 @@
 name: GitHubRelease
 on: push
+
 jobs:
-  release:
-    name: Release
+  build:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Generate ZIP
+        run: zip -r ocular-d.zip ocular-d
       - name: Release
-        uses: fnkr/github-action-ghr@v1
+        uses: softprops/action-gh-release@v1
         if: startsWith(github.ref, 'refs/tags/')
+        with:
+          files: ocular-d.zip
+          body_path: ${{ github.workflow }}-CHANGELOG.md
         env:
-          GHR_COMPRESS: zip
-          GHR_PATH: ocular-d
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
