@@ -1,5 +1,7 @@
 name: GitHubRelease
 on:
+  # Trigger the workflow on pull request,
+  # but only for the master branch
   pull_request:
     branches:
       - master
