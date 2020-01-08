@@ -12,7 +12,8 @@ jobs:
     - name: Create Zip Folder
       run: zip -r ocular-d.zip ocular-d
 
-  release:  
+  release:
+    runs-on: ubuntu-latest
     steps:
     - name: Release
     - uses: docker://antonyurchenko/git-release:latest
