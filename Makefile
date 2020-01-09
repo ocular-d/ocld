@@ -22,7 +22,7 @@ tag_github: ## Tag the commit on GitHub with version nr.
 
 .PHONY: check_release_version
 check_release_version: ## Get latest release from GitHub
-	$(shell ./check.sh)
+	$(shell ./release_version.sh)
 
 .PHONY: release
 release: check_release_version tag_github ## Tag with release nr and push tag to GitHub
