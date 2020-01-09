@@ -16,9 +16,9 @@ help: ## This help message
 
 .PHONY: tag_github
 tag_github: ## Tag the commit on GitHub with version nr.
-	@echo "$(VERSION) -m  chore(release): $(VERSION)"
-	##@git tag -a $(VERSION) -m "chore(release): $(VERSION)" || true
-	#@git push origin $(VERSION)
+	#@echo "$(VERSION) -m  chore(release): $(VERSION)"
+	@git tag -a $(VERSION) -m "chore(release): $(VERSION)" || true
+	@git push origin $(VERSION)
 
 .PHONY: check_release_version
 check_release_version: ## Get latest release from GitHub
