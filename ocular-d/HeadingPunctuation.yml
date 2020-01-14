@@ -1,6 +1,6 @@
 extends: existence
 message: "Don't use end punctuation in headings."
-link: https://docs.microsoft.com/en-us/style-guide/punctuation/periods
+link: https://ocular-d.github.io/styleguide-editorial/periods.html
 nonword: true
 level: warning
 scope: heading

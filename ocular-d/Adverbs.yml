@@ -1,6 +1,6 @@
 extends: existence
 message: "Consider removing '%s'."
-link: https://docs.microsoft.com/en-us/style-guide/word-choice/use-simple-words-concise-sentences
+link: https://ocular-d.github.io/styleguide-editorial/use-simple-words-concise-sentences.html
 ignorecase: true
 level: warning
 action:

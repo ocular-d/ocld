@@ -4,5 +4,5 @@ extends: occurrence
 link: https://styleguide.mailchimp.com/writing-for-accessibility/#header-3-use-plain-language
 scope: sentence
 level: warning
-max: 30
+max: 25
 token: \b(\w+)\b
