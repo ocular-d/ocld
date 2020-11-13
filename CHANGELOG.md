@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.0.4] - 2020-11-13
+
+### Added
+
+- Rule for checking git merge conflict markers
+
 ## [0.0.3] - 2020-02-14
 
 ## Improved
@@ -16,7 +22,7 @@ All notable changes to this project will be documented in this file.
 
 We added new styles/rules:
 
-- Adverbs 
+- Adverbs
 - Avoid
 - Gender
 - GenderBias
